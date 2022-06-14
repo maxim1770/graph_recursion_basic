@@ -4,6 +4,7 @@
 #include <vector>
 
 using namespace std;
+
 //const int N=12; // Количество вершин графа.
 //typedef struct zveno *graph;
 //
