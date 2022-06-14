@@ -4,84 +4,6 @@
 #include <vector>
 
 using namespace std;
-//const int N=12; // Количество вершин графа.
-//typedef struct zveno *graph;
-//
-//typedef struct zveno
-//{
-//	 int Key; //Вершина графа.
-//	 graph Sled; // Указатель на след. смежную вершину.
-//	
-//} Leader;
-//graph beg[N]; // Описание типа списков смежности.
-//
-//void AddGraph(int x, int y, graph beg[N])
-//{
-//	graph ukzv, uzel; //Рабочие указатели.
-//	if (beg[x] != NULL)
-//		{ Poisk(beg[x],y,&ukzv);
-//	 if (ukzv == NULL)
-//		{ // Добавление элемента в конец списка, заданного указателем beg[x].
-//		 uzel = new (Leader);
-//	(*uzel).Key = y; (*uzel).Sled = NULL; ukzv = beg[x];
-//	 while ((*ukzv).Sled != NULL)
-//		 ukzv = (*ukzv).Sled;
-//	(*ukzv).Sled = uzel; } }
-//		 else {
-//		beg[x] = new (zveno);
-//		(*beg[x]).Key = y; (*beg[x]).Sled = NULL;
-//	}
-//}
-//
-//void MakeGraph(graph beg[N]) // Построение списков смежности beg графа.
-//{ 
-//	int x,y;
-//	graph ukzv,uzel; //Рабочие указатели.
-//	cout << "Введите начало дуги: ";
-//	cin >> x;
-//	while (x != 0)
-//	{
-//		cout << "Введите конец дуги: ";
-//		cin >> y;
-//		AddGraph(x,y,beg);
-//		cout << "Введите начало дуги: "; 
-//		cin >> x; 
-//	} 
-//}
-//
-// void PrintGraph(svqz beg[N])
-// {
-//	int i;
-//	graph pointer; //Рабочий указатель.
-//	for (i = 1; i<N; i++)
-//	{ 
-//		cout << i << " ...";
-//		pointer = beg[i];
-//		if (pointer == NULL) cout << "Пустой список!\n";
-//		else 
-//		{
-//			while (pointer != NULL)
-//			{ 
-//				cout << (*pointer).Key;
-//				pointer = (*pointer).Sled; 
-//			}
-//			cout << endl;
-//		} 
-//	}
-//}
-
-
-
-//const int n = 6;
-//int matrix[n][n] =
-//{
-//	0,0,0,1,1,1,
-//	0,0,0,1,1,1,
-//	0,0,0,1,1,1,
-//	1,1,1,0,0,0,
-//	1,1,1,0,0,0,
-//	1,1,1,0,0,0
-//};
 
 const int n = 6;
 int matrix[n][n] =
@@ -98,18 +20,6 @@ int matrix[n][n] =
 int stroke_number[n];   // номер хода, на котором посещается вершина
 int path[n]; // номера посещаемых вершин
 int vertex = 4;    // начальная вершина
-
-//void Vyvod(int w, int l)
-// // (рекурсивный алгоритм). *w - указатель на корень дерева.
-//
-//{
-//	 int i;
-// if (w != NULL)
-//{ Vyvod(&((w).Right),l + 1);
-// for (i = 1; i <= l; i++) cout << " ";
-// cout << (w).Key << endl;
-// Vyvod(&((w).Left),l + 1); } 
-//}
 
 void print_answer(void)
 {
